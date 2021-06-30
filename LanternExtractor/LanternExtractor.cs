@@ -25,7 +25,8 @@ namespace LanternExtractor
 
             if (args.Length != 1)
             {
-                Console.WriteLine("Usage: lantern.exe <filename/shortname/all>");
+                string appName = AppDomain.CurrentDomain.FriendlyName;
+                Console.WriteLine($"Usage: {appName} <filename/shortname/all>");
                 return;
             }
             
